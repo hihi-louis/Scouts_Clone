@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Scout Finland</title>
+
+        <!-- FAVICON -->
+        <link rel="shortcut icon" type="image/png" href="./assets/favicon/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="./assets/favicon/site.webmanifest">
+
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- CSS RESET -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+
+        <!-- EMBED GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400;700;800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- STYLE -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <script type="module" src="firebase-initialisation.js"></script>
+   
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="fixed-header">
+            <div class="wrapper-second-menu">
+                <div class="main-content second-menu">
+                    <div class="body">
+                        <nav class="nav-country-language">
+                            <ul>
+                                <li><a href="#">Choose Country<i class="web-icon fa-solid fa-caret-down"></i></a></li>
+                                <li><a href="#">Languages<i class="web-icon fa-solid fa-caret-down"></i></a></li>
+                            </ul>
+                        </nav>
+                        <!-- Navigation -->
+                        <nav class="nav-country-language">
+                            <ul>
+                                <li><a href="#">World Scout</a></li>
+                                <li><a href="#">Search<i class="web-icon fa-solid fa-magnifying-glass"></i></a></li>
+                                <li><a id="user-link" href="/Dynamic Website/index/index.html"><span id="login-user">Login</span> <i class="web-icon fa-solid fa-user"></i></a></li>
+                                
+                                <!-- <li><a href="#blog">Blog</a></li> -->
+                            </ul>
+                        </nav>
+                        <!-- Action (button) -->
+                        <div class="action">
+                            <a href="#!" class="btn">Donate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content first-menu">
+                <div class="body">
+                    <!-- Logo -->
+                    <a href="http://127.0.0.1:5500/index.html">
+                        <img
+                            src="./assets/img/Logo.png"
+                            alt="Scout"
+                            class="logo"
+                        />
+                    </a>
+
+                    <!-- Navigation -->
+                    <nav class="nav">
+                        <ul>
+                            <li class="nav-item"><a href="http://127.0.0.1:5500/events-page.html">Events</a></li>
+                                
+                            
+
+                            <li class="nav-item"><a href="#">Circles</a>
+                                <ul class="sub-menu1">
+                                    <li class="sub-menu-level-1"><a href="#">Tempere</a>
+                                       <ul class="sub-menu2">
+                                            <li class="sub-menu-level-2"><a href="#">Troop 1a</a></li>
+                                            <li class="sub-menu-level-2"><a href="#">Troop 2a</a></li>
+                                            <li class="sub-menu-level-2"><a href="#">Troop 3a</a></li>
+                                       </ul>
+                                    </li>
+                                    <li class="sub-menu-level-1"><a href="#">Nokia</a>
+                                        <ul class="sub-menu2">
+                                            <li class="sub-menu-level-2"><a href="#">Troop 1b</a></li>
+                                            <li class="sub-menu-level-2"><a href="#">Troop 2b</a></li>
+                                            <li class="sub-menu-level-2"><a href="#">Troop 3b</a></li>
+                                            <li class="sub-menu-level-2"><a href="#">Troop 4b</a></li>
+
+                                       </ul>
+                                    </li>
+                                    <li class="sub-menu-level-1"><a href="#">Akaa</a>
+                                        <ul class="sub-menu2">
+                                            <li class="sub-menu-level-2"><a href="#">Troop 1c</a></li>
+                                            <li class="sub-menu-level-2"><a href="#">Troop 2c</a></li>
+                                            
+                                       </ul>
+                                    </li>
+                                    <li class="sub-menu-level-1"><a href="#">Forssa</a>
+                                        <ul class="sub-menu2">
+                                            <li class="sub-menu-level-2"><a href="#">Troop 1d</a></li>
+                                            <li class="sub-menu-level-2"><a href="#">Troop 2d</a></li>
+                                            <li class="sub-menu-level-2"><a href="#">Troop 3d</a></li>
+                                       </ul>
+                                    </li>
+                                    <li class="sub-menu-level-1"><a href="#">Riihimäki</a>
+                                        <ul class="sub-menu2">
+                                            <li class="sub-menu-level-2"><a href="#">Troop 1e</a></li>
+                                            
+                                       </ul>
+                                    </li>
+                                    <li class="sub-menu-level-1"><a href="#">Hämeenlinna</a>
+                                        <ul class="sub-menu2">
+                                            <li class="sub-menu-level-2"><a href="#">Troop 1f</a></li>
+                                            <li class="sub-menu-level-2"><a href="#">Troop 2f</a></li>
+                          
+                                       </ul>
+                                    </li>
+                                    <li class="sub-menu-level-1"><a href="#">Päijät-Häme</a>
+                                        <ul class="sub-menu2">
+                                            <li class="sub-menu-level-2"><a href="#">Troop 1g</a></li>
+                                            
+                                       </ul>
+                                    </li>
+                                    <li class="sub-menu-level-1"><a href="#">Orivesi</a>
+                                        <ul class="sub-menu2">
+                                            <li class="sub-menu-level-2"><a href="#">Troop 1h</a></li>
+                                            <li class="sub-menu-level-2"><a href="#">Troop 2h</a></li>
+                        
+                                       </ul>
+                                    </li>
+                                    <li class="sub-menu-level-1"><a href="#">Mänttä</a>
+                                        <ul class="sub-menu2">
+                                            <li class="sub-menu-level-2"><a href="#">Troop 1i</a></li>
+                                            <li class="sub-menu-level-2"><a href="#">Troop 2i</a></li>
+                                            <li class="sub-menu-level-2"><a href="#">Troop 3i</a></li>
+                                       </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a href="#">Learn More</a>
+                                <ul>
+                                    <li class="sub-menu-level-1"><a href="#">For Scouts</a></li>                                      
+                                    
+                                    <li class="sub-menu-level-1"><a href="#">For Flags</a></li>
+                                    <li class="sub-menu-level-1"><a href="#">For Support Members</a></li>
+                                    <li class="sub-menu-level-1"><a href="#">About The Country</a></li>
+                                    <li class="sub-menu-level-1"><a href="#">Other Guidances</a></li>
+
+
+
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="#">Shop</a>
+                                <ul>
+                                    <li class="sub-menu-level-1"><a href="#">World Scout shop</a></li>
+                                    <li class="sub-menu-level-1"><a href="#">Local shop</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="#">Contact</a>
+                                <ul>
+                                    <li class="sub-menu-level-1"><a href="#">Word Scout</a></li>
+                                    <li class="sub-menu-level-1"><a href="#">At your country</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    
+                </div>
+            
+        </header>
+
+        <main>
+            <!-- HERO -->
+            <div class="hero-wrap">
+                <div class="hero-photo"></div>
+                <div class="main-content">
+                   
+                    <!-- Hero content (right side)  -->
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Empowering young people with skills to create a better world
+                        </h1>
+                        
+                        <!-- Action -->
+                        <div class="action">
+                            <a href="#!" class="btn">Learn More</a>                            
+                        </div>
+           
+                    </div>
+                </div>
+            </div>
+
+            <!-- FEATURED EVENTS -->
+            <div id="featured-event" class="featured-event-wrap">
+                <div class="main-content">
+                    <h2 class="title">Events Next Week</h2>
+                        <div class="row desc">
+                            <p class="text">Highlighted events of next week for you</p>
+                            
+                            <!-- Back and forth buttons -->
+                            <div class="icons">
+                                <button class="back-icon" alt="Previous courses">
+                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <button class="next-icon" alt="Next courses">
+                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Featured Events -->
+                        <div class="featured-event-intro">
+                            <div class="featured-event-each">
+                                <a href="#!"><img src="https://i2.wp.com/www.troop31.us/wp-content/uploads/2015/05/guitar.jpg" alt="Event 1" class="featured-event-img" /></a>
+                                <div class="featured-event-details">
+                                    <div class="row row-featured-event">
+                                        <h3><a href="#!" class="featured-event-title line-clamp">Event 1</a></h3>
+                                        
+                                    </div>
+                                    <p class="featured-event-desc line-clamp line-2 break-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <div class="row row-price">
+                                        <div class="featured-event-price">$0.00</div>
+                                        <a href="#!"><div class="btn">See Details</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="featured-event-each">
+                                <a href="#!"><img src="https://i2.wp.com/www.troop31.us/wp-content/uploads/2015/05/guitar.jpg" alt="Event 2" class="featured-event-img" /></a>
+                                <div class="featured-event-details">
+                                    <div class="row row-featured-event">
+                                        <h3><a href="#!" class="featured-event-title line-clamp break-all">Event 2</a></h3>
+                                        
+                                    </div>
+                                    <p class="featured-event-desc line-clamp line-2 break-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <div class="row row-price">
+                                        <div class="featured-event-price">$0.00</div>
+                                        <a href="#!"><div class="btn">See Details</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="featured-event-each">
+                                <a href="#!"><img src="https://i2.wp.com/www.troop31.us/wp-content/uploads/2015/05/guitar.jpg" alt="Event 3" class="featured-event-img" /></a>
+                                <div class="featured-event-details">
+                                    <div class="row row-featured-event">
+                                        <h3><a href="#!" class="featured-event-title line-clamp">Event 3</a></h3>
+                                        
+                                    </div>
+                                    <p class="featured-event-desc line-clamp line-2 break-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <div class="row row-price">
+                                        <div class="featured-event-price">$0.00</div>
+                                        <a href="#!"><div class="btn">See Details</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </h2>
+                </div>
+            </div>
+
+            
+            <!-- FOOTER -->
+            <div class="footer-wrap">
+                <div class="main-content">
+                    <div class="footer-details">
+
+                        <!-- Intro -->
+                        <div class="footer-intro">
+                            <img src="./assets/img/footer-logo.png" alt="Scout" class="footer-logo">
+                            <p class="desc">Follow our social media channels and stay updated with the latest from around the world.</p>
+                            <div class="icons">
+                                <a href="#!"><img src="./assets/img/footer-icon1.svg" alt="Twitter" class="social-icon"></a>
+                                <a href="#!"><img src="./assets/img/footer-icon2.svg" alt="Facebook" class="social-icon"></a>
+                                <a href="#!"><img src="./assets/img/footer-icon3.svg" alt="LinkedIn" class="social-icon"></a>
+                                <a href="#!"><img src="./assets/img/footer-icon4.svg" alt="Instagram" class="social-icon"></a>
+                            </div>
+                        </div>
+
+                        <!-- Info lists -->
+                        <div class="footer-lists">
+                            <ul class="list-each">
+                                World Scout
+                                <div class="separate-line"></div>
+                                <a href="#!"><li class="list-item">About Us</li></a>
+                                <a href="#!"><li class="list-item">Features</li></a>
+                                <a href="#!"><li class="list-item">Contact</li></a>
+                                <a href="#!"><li class="list-item">Latest News</li></a>
+                            </ul>
+                            <ul class="list-each">
+                                Support
+                                <div class="separate-line"></div>
+                                <a href="#!"><li class="list-item">Cookies policy</li></a>
+                                <a href="#!"><li class="list-item">Terms & Conditions</li></a>
+                                <a href="#!"><li class="list-item">Privacy</li></a>
+                                <a href="#!"><li class="list-item">Help</li></a>
+                            </ul>
+                            <ul class="list-each">
+                                Children Matters
+                                <div class="separate-line"></div>
+                                <a href="#!"><li class="list-item">Child Online Protection Guidelines</li></a>
+                                <a href="#!"><li class="list-item">Education Initiatives</li></a>
+                                <a href="#!"><li class="list-item">WOSM Service</li></a>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="separate-line">
+                    </div>
+                    <div class="copyright" style="color:#FFFFFF">
+                        Copyright ©2023 LAB Dynamic Website Development Project. All rights reserved
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <script type="module" src="homepage.js"></script>
+
+    </body>
+</html>
